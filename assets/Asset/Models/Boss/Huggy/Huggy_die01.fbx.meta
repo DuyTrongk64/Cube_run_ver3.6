@@ -1,0 +1,184 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "a8e16a2f-a8d7-49e4-91f3-b45ef83d9ed0",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "cb6b8": {
+      "importer": "gltf-mesh",
+      "uuid": "a8e16a2f-a8d7-49e4-91f3-b45ef83d9ed0@cb6b8",
+      "displayName": "",
+      "id": "cb6b8",
+      "name": "boss_huggy.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b4251": {
+      "importer": "gltf-animation",
+      "uuid": "a8e16a2f-a8d7-49e4-91f3-b45ef83d9ed0@b4251",
+      "displayName": "",
+      "id": "b4251",
+      "name": "die.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.9583333134651184
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "438fe": {
+      "importer": "gltf-skeleton",
+      "uuid": "a8e16a2f-a8d7-49e4-91f3-b45ef83d9ed0@438fe",
+      "displayName": "",
+      "id": "438fe",
+      "name": "UnnamedSkeleton.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 17
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "adacb": {
+      "importer": "gltf-embeded-image",
+      "uuid": "a8e16a2f-a8d7-49e4-91f3-b45ef83d9ed0@adacb",
+      "displayName": "",
+      "id": "adacb",
+      "name": "file2.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "e873a": {
+      "importer": "texture",
+      "uuid": "a8e16a2f-a8d7-49e4-91f3-b45ef83d9ed0@e873a",
+      "displayName": "",
+      "id": "e873a",
+      "name": "file2.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "a8e16a2f-a8d7-49e4-91f3-b45ef83d9ed0@adacb"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b8e94": {
+      "importer": "gltf-material",
+      "uuid": "a8e16a2f-a8d7-49e4-91f3-b45ef83d9ed0@b8e94",
+      "displayName": "",
+      "id": "b8e94",
+      "name": "text_char.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "5da96": {
+      "importer": "gltf-scene",
+      "uuid": "a8e16a2f-a8d7-49e4-91f3-b45ef83d9ed0@5da96",
+      "displayName": "",
+      "id": "5da96",
+      "name": "Huggy_die01.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file2",
+        "uri": "a8e16a2f-a8d7-49e4-91f3-b45ef83d9ed0@adacb"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "a",
+        "duration": 0.9583333134651184,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "die",
+            "from": 0,
+            "to": 0.9583333134651184,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "a8e16a2f-a8d7-49e4-91f3-b45ef83d9ed0@5da96",
+    "assetFinder": {
+      "meshes": [
+        "a8e16a2f-a8d7-49e4-91f3-b45ef83d9ed0@cb6b8"
+      ],
+      "skeletons": [
+        "a8e16a2f-a8d7-49e4-91f3-b45ef83d9ed0@438fe"
+      ],
+      "textures": [
+        "a8e16a2f-a8d7-49e4-91f3-b45ef83d9ed0@e873a"
+      ],
+      "materials": [
+        "a8e16a2f-a8d7-49e4-91f3-b45ef83d9ed0@b8e94"
+      ],
+      "scenes": [
+        "a8e16a2f-a8d7-49e4-91f3-b45ef83d9ed0@5da96"
+      ]
+    }
+  }
+}

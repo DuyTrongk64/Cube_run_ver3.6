@@ -1,0 +1,95 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "c2904a1f-257b-49a7-9c0f-8675361be13b",
+  "files": [],
+  "subMetas": {
+    "48588": {
+      "importer": "gltf-material",
+      "uuid": "c2904a1f-257b-49a7-9c0f-8675361be13b@48588",
+      "displayName": "",
+      "id": "48588",
+      "name": "do1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0a032": {
+      "importer": "gltf-mesh",
+      "uuid": "c2904a1f-257b-49a7-9c0f-8675361be13b@0a032",
+      "displayName": "",
+      "id": "0a032",
+      "name": "trugai_Material0.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "74f93": {
+      "importer": "gltf-material",
+      "uuid": "c2904a1f-257b-49a7-9c0f-8675361be13b@74f93",
+      "displayName": "",
+      "id": "74f93",
+      "name": "xanh.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a6a82": {
+      "importer": "gltf-scene",
+      "uuid": "c2904a1f-257b-49a7-9c0f-8675361be13b@a6a82",
+      "displayName": "",
+      "id": "a6a82",
+      "name": "trap_trugaithang.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "c2904a1f-257b-49a7-9c0f-8675361be13b@a6a82",
+    "assetFinder": {
+      "meshes": [
+        "c2904a1f-257b-49a7-9c0f-8675361be13b@0a032"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "c2904a1f-257b-49a7-9c0f-8675361be13b@48588",
+        "c2904a1f-257b-49a7-9c0f-8675361be13b@74f93"
+      ],
+      "scenes": [
+        "c2904a1f-257b-49a7-9c0f-8675361be13b@a6a82"
+      ]
+    }
+  }
+}

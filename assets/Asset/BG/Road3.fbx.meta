@@ -1,0 +1,95 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "1364393c-eced-4886-9266-23d2af828aae",
+  "files": [],
+  "subMetas": {
+    "fc4d4": {
+      "importer": "gltf-mesh",
+      "uuid": "1364393c-eced-4886-9266-23d2af828aae@fc4d4",
+      "displayName": "",
+      "id": "fc4d4",
+      "name": "road_03_Material0.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c6ecf": {
+      "importer": "gltf-material",
+      "uuid": "1364393c-eced-4886-9266-23d2af828aae@c6ecf",
+      "displayName": "",
+      "id": "c6ecf",
+      "name": "lambert9.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1d8fe": {
+      "importer": "gltf-material",
+      "uuid": "1364393c-eced-4886-9266-23d2af828aae@1d8fe",
+      "displayName": "",
+      "id": "1d8fe",
+      "name": "lambert10.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0a3ac": {
+      "importer": "gltf-scene",
+      "uuid": "1364393c-eced-4886-9266-23d2af828aae@0a3ac",
+      "displayName": "",
+      "id": "0a3ac",
+      "name": "Road3.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "1364393c-eced-4886-9266-23d2af828aae@0a3ac",
+    "assetFinder": {
+      "meshes": [
+        "1364393c-eced-4886-9266-23d2af828aae@fc4d4"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "1364393c-eced-4886-9266-23d2af828aae@c6ecf",
+        "1364393c-eced-4886-9266-23d2af828aae@1d8fe"
+      ],
+      "scenes": [
+        "1364393c-eced-4886-9266-23d2af828aae@0a3ac"
+      ]
+    }
+  }
+}

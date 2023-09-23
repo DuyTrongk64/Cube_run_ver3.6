@@ -1,0 +1,78 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "289a7942-3e99-4c41-9b05-4bac195cf2e6",
+  "files": [],
+  "subMetas": {
+    "7f842": {
+      "importer": "gltf-mesh",
+      "uuid": "289a7942-3e99-4c41-9b05-4bac195cf2e6@7f842",
+      "displayName": "",
+      "id": "7f842",
+      "name": "border_green.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a0ab6": {
+      "importer": "gltf-material",
+      "uuid": "289a7942-3e99-4c41-9b05-4bac195cf2e6@a0ab6",
+      "displayName": "",
+      "id": "a0ab6",
+      "name": "lambert8.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "51d67": {
+      "importer": "gltf-scene",
+      "uuid": "289a7942-3e99-4c41-9b05-4bac195cf2e6@51d67",
+      "displayName": "",
+      "id": "51d67",
+      "name": "border_green.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "289a7942-3e99-4c41-9b05-4bac195cf2e6@51d67",
+    "assetFinder": {
+      "meshes": [
+        "289a7942-3e99-4c41-9b05-4bac195cf2e6@7f842"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "289a7942-3e99-4c41-9b05-4bac195cf2e6@a0ab6"
+      ],
+      "scenes": [
+        "289a7942-3e99-4c41-9b05-4bac195cf2e6@51d67"
+      ]
+    }
+  }
+}

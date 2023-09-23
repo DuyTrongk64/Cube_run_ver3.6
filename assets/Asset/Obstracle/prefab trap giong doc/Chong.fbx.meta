@@ -1,0 +1,108 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "7915f2c3-85ae-4311-b01f-fc622f43deb3",
+  "files": [],
+  "subMetas": {
+    "b16b5": {
+      "importer": "gltf-mesh",
+      "uuid": "7915f2c3-85ae-4311-b01f-fc622f43deb3@b16b5",
+      "displayName": "",
+      "id": "b16b5",
+      "name": "Chong.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "74b66": {
+      "importer": "texture",
+      "uuid": "7915f2c3-85ae-4311-b01f-fc622f43deb3@74b66",
+      "displayName": "",
+      "id": "74b66",
+      "name": "T_PokemonRunner_Props_Base_color_1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Asset/Obstracle/T_PokemonRunner_Props_Base_color.tga"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d7214": {
+      "importer": "gltf-material",
+      "uuid": "7915f2c3-85ae-4311-b01f-fc622f43deb3@d7214",
+      "displayName": "",
+      "id": "d7214",
+      "name": "M_PokemonRunner_Props.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c97a1": {
+      "importer": "gltf-scene",
+      "uuid": "7915f2c3-85ae-4311-b01f-fc622f43deb3@c97a1",
+      "displayName": "",
+      "id": "c97a1",
+      "name": "Chong.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "T_PokemonRunner_Props_Base_color_1",
+        "uri": "db://assets/Asset/Obstracle/T_PokemonRunner_Props_Base_color.tga"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "7915f2c3-85ae-4311-b01f-fc622f43deb3@c97a1",
+    "assetFinder": {
+      "meshes": [
+        "7915f2c3-85ae-4311-b01f-fc622f43deb3@b16b5"
+      ],
+      "skeletons": [],
+      "textures": [
+        "7915f2c3-85ae-4311-b01f-fc622f43deb3@74b66"
+      ],
+      "materials": [
+        "7915f2c3-85ae-4311-b01f-fc622f43deb3@d7214"
+      ],
+      "scenes": [
+        "7915f2c3-85ae-4311-b01f-fc622f43deb3@c97a1"
+      ]
+    }
+  }
+}

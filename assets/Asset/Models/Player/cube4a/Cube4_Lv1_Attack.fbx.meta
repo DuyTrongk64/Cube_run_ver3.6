@@ -1,0 +1,264 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "e40fb9a4-135f-4b97-a7fc-2e912d7cee70",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "b12f7": {
+      "importer": "gltf-mesh",
+      "uuid": "e40fb9a4-135f-4b97-a7fc-2e912d7cee70@b12f7",
+      "displayName": "",
+      "id": "b12f7",
+      "name": "cube4.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9592c": {
+      "importer": "gltf-mesh",
+      "uuid": "e40fb9a4-135f-4b97-a7fc-2e912d7cee70@9592c",
+      "displayName": "",
+      "id": "9592c",
+      "name": "wp_cap1.mesh",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "de4a5": {
+      "importer": "gltf-animation",
+      "uuid": "e40fb9a4-135f-4b97-a7fc-2e912d7cee70@de4a5",
+      "displayName": "",
+      "id": "de4a5",
+      "name": "Cube4_Lv1_Attack.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.7916666865348816
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "438fe": {
+      "importer": "gltf-skeleton",
+      "uuid": "e40fb9a4-135f-4b97-a7fc-2e912d7cee70@438fe",
+      "displayName": "",
+      "id": "438fe",
+      "name": "UnnamedSkeleton.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 21
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "612f0": {
+      "importer": "gltf-embeded-image",
+      "uuid": "e40fb9a4-135f-4b97-a7fc-2e912d7cee70@612f0",
+      "displayName": "",
+      "id": "612f0",
+      "name": "file4.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "b896e": {
+      "importer": "gltf-embeded-image",
+      "uuid": "e40fb9a4-135f-4b97-a7fc-2e912d7cee70@b896e",
+      "displayName": "",
+      "id": "b896e",
+      "name": "file6.image",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "91dcf": {
+      "importer": "texture",
+      "uuid": "e40fb9a4-135f-4b97-a7fc-2e912d7cee70@91dcf",
+      "displayName": "",
+      "id": "91dcf",
+      "name": "file4.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "e40fb9a4-135f-4b97-a7fc-2e912d7cee70@612f0"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "5189c": {
+      "importer": "texture",
+      "uuid": "e40fb9a4-135f-4b97-a7fc-2e912d7cee70@5189c",
+      "displayName": "",
+      "id": "5189c",
+      "name": "file6.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "e40fb9a4-135f-4b97-a7fc-2e912d7cee70@b896e"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f88c8": {
+      "importer": "gltf-material",
+      "uuid": "e40fb9a4-135f-4b97-a7fc-2e912d7cee70@f88c8",
+      "displayName": "",
+      "id": "f88c8",
+      "name": "text_char2.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "bcc37": {
+      "importer": "gltf-material",
+      "uuid": "e40fb9a4-135f-4b97-a7fc-2e912d7cee70@bcc37",
+      "displayName": "",
+      "id": "bcc37",
+      "name": "text_char4.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d234a": {
+      "importer": "gltf-scene",
+      "uuid": "e40fb9a4-135f-4b97-a7fc-2e912d7cee70@d234a",
+      "displayName": "",
+      "id": "d234a",
+      "name": "Cube4_Lv1_Attack.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file4",
+        "uri": "e40fb9a4-135f-4b97-a7fc-2e912d7cee70@612f0"
+      },
+      {
+        "name": "file6",
+        "uri": "e40fb9a4-135f-4b97-a7fc-2e912d7cee70@b896e"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "Cube4_Lv1_Attack",
+        "duration": 0.7916666865348816,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Cube4_Lv1_Attack",
+            "from": 0,
+            "to": 0.7916666865348816,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "e40fb9a4-135f-4b97-a7fc-2e912d7cee70@d234a",
+    "assetFinder": {
+      "meshes": [
+        "e40fb9a4-135f-4b97-a7fc-2e912d7cee70@b12f7",
+        "e40fb9a4-135f-4b97-a7fc-2e912d7cee70@9592c"
+      ],
+      "skeletons": [
+        "e40fb9a4-135f-4b97-a7fc-2e912d7cee70@438fe"
+      ],
+      "textures": [
+        "e40fb9a4-135f-4b97-a7fc-2e912d7cee70@91dcf",
+        "e40fb9a4-135f-4b97-a7fc-2e912d7cee70@5189c"
+      ],
+      "materials": [
+        "e40fb9a4-135f-4b97-a7fc-2e912d7cee70@f88c8",
+        "e40fb9a4-135f-4b97-a7fc-2e912d7cee70@bcc37"
+      ],
+      "scenes": [
+        "e40fb9a4-135f-4b97-a7fc-2e912d7cee70@d234a"
+      ]
+    }
+  }
+}

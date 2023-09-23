@@ -1,0 +1,184 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "96ceb677-05c8-4867-91b7-abec41298d72",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "cb6b8": {
+      "importer": "gltf-mesh",
+      "uuid": "96ceb677-05c8-4867-91b7-abec41298d72@cb6b8",
+      "displayName": "",
+      "id": "cb6b8",
+      "name": "boss_huggy.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "cf5ee": {
+      "importer": "gltf-animation",
+      "uuid": "96ceb677-05c8-4867-91b7-abec41298d72@cf5ee",
+      "displayName": "",
+      "id": "cf5ee",
+      "name": "run.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.4166666567325592
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "438fe": {
+      "importer": "gltf-skeleton",
+      "uuid": "96ceb677-05c8-4867-91b7-abec41298d72@438fe",
+      "displayName": "",
+      "id": "438fe",
+      "name": "UnnamedSkeleton.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 17
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "adacb": {
+      "importer": "gltf-embeded-image",
+      "uuid": "96ceb677-05c8-4867-91b7-abec41298d72@adacb",
+      "displayName": "",
+      "id": "adacb",
+      "name": "file2.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "e873a": {
+      "importer": "texture",
+      "uuid": "96ceb677-05c8-4867-91b7-abec41298d72@e873a",
+      "displayName": "",
+      "id": "e873a",
+      "name": "file2.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "96ceb677-05c8-4867-91b7-abec41298d72@adacb"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b8e94": {
+      "importer": "gltf-material",
+      "uuid": "96ceb677-05c8-4867-91b7-abec41298d72@b8e94",
+      "displayName": "",
+      "id": "b8e94",
+      "name": "text_char.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0ecc5": {
+      "importer": "gltf-scene",
+      "uuid": "96ceb677-05c8-4867-91b7-abec41298d72@0ecc5",
+      "displayName": "",
+      "id": "0ecc5",
+      "name": "Huggy_run01.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file2",
+        "uri": "96ceb677-05c8-4867-91b7-abec41298d72@adacb"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "a",
+        "duration": 0.4166666567325592,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "run",
+            "from": 0,
+            "to": 0.4166666567325592,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "96ceb677-05c8-4867-91b7-abec41298d72@0ecc5",
+    "assetFinder": {
+      "meshes": [
+        "96ceb677-05c8-4867-91b7-abec41298d72@cb6b8"
+      ],
+      "skeletons": [
+        "96ceb677-05c8-4867-91b7-abec41298d72@438fe"
+      ],
+      "textures": [
+        "96ceb677-05c8-4867-91b7-abec41298d72@e873a"
+      ],
+      "materials": [
+        "96ceb677-05c8-4867-91b7-abec41298d72@b8e94"
+      ],
+      "scenes": [
+        "96ceb677-05c8-4867-91b7-abec41298d72@0ecc5"
+      ]
+    }
+  }
+}

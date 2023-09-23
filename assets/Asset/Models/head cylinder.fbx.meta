@@ -1,0 +1,78 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "e05d932b-b5ff-468e-921e-5c9371072b1d",
+  "files": [],
+  "subMetas": {
+    "ee10c": {
+      "importer": "gltf-mesh",
+      "uuid": "e05d932b-b5ff-468e-921e-5c9371072b1d@ee10c",
+      "displayName": "",
+      "id": "ee10c",
+      "name": "head_cylinder.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "93ba8": {
+      "importer": "gltf-material",
+      "uuid": "e05d932b-b5ff-468e-921e-5c9371072b1d@93ba8",
+      "displayName": "",
+      "id": "93ba8",
+      "name": "cylinder_text.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c275a": {
+      "importer": "gltf-scene",
+      "uuid": "e05d932b-b5ff-468e-921e-5c9371072b1d@c275a",
+      "displayName": "",
+      "id": "c275a",
+      "name": "head cylinder.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "e05d932b-b5ff-468e-921e-5c9371072b1d@c275a",
+    "assetFinder": {
+      "meshes": [
+        "e05d932b-b5ff-468e-921e-5c9371072b1d@ee10c"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "e05d932b-b5ff-468e-921e-5c9371072b1d@93ba8"
+      ],
+      "scenes": [
+        "e05d932b-b5ff-468e-921e-5c9371072b1d@c275a"
+      ]
+    }
+  }
+}

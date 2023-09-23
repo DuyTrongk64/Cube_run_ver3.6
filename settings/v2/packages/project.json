@@ -1,0 +1,24 @@
+{
+  "physics": {
+    "collisionGroups": [
+      {
+        "index": 1,
+        "name": "Player Body"
+      },
+      {
+        "index": 2,
+        "name": "Enemy Body"
+      },
+      {
+        "index": 3,
+        "name": "Trap"
+      }
+    ],
+    "collisionMatrix": {
+      "0": 2,
+      "1": 11,
+      "2": 0,
+      "3": 2
+    }
+  }
+}

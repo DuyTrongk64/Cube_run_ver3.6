@@ -1,0 +1,144 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "79d8790d-5d00-479d-b2a1-46ec70636be3",
+  "files": [],
+  "subMetas": {
+    "cb014": {
+      "importer": "gltf-mesh",
+      "uuid": "79d8790d-5d00-479d-b2a1-46ec70636be3@cb014",
+      "displayName": "",
+      "id": "cb014",
+      "name": "Vach.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "06f5c": {
+      "importer": "gltf-mesh",
+      "uuid": "79d8790d-5d00-479d-b2a1-46ec70636be3@06f5c",
+      "displayName": "",
+      "id": "06f5c",
+      "name": "San.mesh",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b16b5": {
+      "importer": "gltf-mesh",
+      "uuid": "79d8790d-5d00-479d-b2a1-46ec70636be3@b16b5",
+      "displayName": "",
+      "id": "b16b5",
+      "name": "Chong.mesh",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "74b66": {
+      "importer": "texture",
+      "uuid": "79d8790d-5d00-479d-b2a1-46ec70636be3@74b66",
+      "displayName": "",
+      "id": "74b66",
+      "name": "T_PokemonRunner_Props_Base_color_1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Asset/Obstracle/T_PokemonRunner_Props_Base_color.tga"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d7214": {
+      "importer": "gltf-material",
+      "uuid": "79d8790d-5d00-479d-b2a1-46ec70636be3@d7214",
+      "displayName": "",
+      "id": "d7214",
+      "name": "M_PokemonRunner_Props.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7a1b0": {
+      "importer": "gltf-scene",
+      "uuid": "79d8790d-5d00-479d-b2a1-46ec70636be3@7a1b0",
+      "displayName": "",
+      "id": "7a1b0",
+      "name": "Hamchong.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "T_PokemonRunner_Props_Base_color_1",
+        "uri": "db://assets/Asset/Obstracle/T_PokemonRunner_Props_Base_color.tga"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "79d8790d-5d00-479d-b2a1-46ec70636be3@7a1b0",
+    "assetFinder": {
+      "meshes": [
+        "79d8790d-5d00-479d-b2a1-46ec70636be3@cb014",
+        "79d8790d-5d00-479d-b2a1-46ec70636be3@06f5c",
+        "79d8790d-5d00-479d-b2a1-46ec70636be3@b16b5"
+      ],
+      "skeletons": [],
+      "textures": [
+        "79d8790d-5d00-479d-b2a1-46ec70636be3@74b66"
+      ],
+      "materials": [
+        "79d8790d-5d00-479d-b2a1-46ec70636be3@d7214"
+      ],
+      "scenes": [
+        "79d8790d-5d00-479d-b2a1-46ec70636be3@7a1b0"
+      ]
+    }
+  }
+}

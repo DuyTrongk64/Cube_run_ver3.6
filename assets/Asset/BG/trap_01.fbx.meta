@@ -1,0 +1,78 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "e5f0984a-968c-45d9-b9f0-5df05d76d0af",
+  "files": [],
+  "subMetas": {
+    "0d7d6": {
+      "importer": "gltf-mesh",
+      "uuid": "e5f0984a-968c-45d9-b9f0-5df05d76d0af@0d7d6",
+      "displayName": "",
+      "id": "0d7d6",
+      "name": "trap_01.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "cd3cd": {
+      "importer": "gltf-material",
+      "uuid": "e5f0984a-968c-45d9-b9f0-5df05d76d0af@cd3cd",
+      "displayName": "",
+      "id": "cd3cd",
+      "name": "lambert7.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "107d4": {
+      "importer": "gltf-scene",
+      "uuid": "e5f0984a-968c-45d9-b9f0-5df05d76d0af@107d4",
+      "displayName": "",
+      "id": "107d4",
+      "name": "trap_01.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "e5f0984a-968c-45d9-b9f0-5df05d76d0af@107d4",
+    "assetFinder": {
+      "meshes": [
+        "e5f0984a-968c-45d9-b9f0-5df05d76d0af@0d7d6"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "e5f0984a-968c-45d9-b9f0-5df05d76d0af@cd3cd"
+      ],
+      "scenes": [
+        "e5f0984a-968c-45d9-b9f0-5df05d76d0af@107d4"
+      ]
+    }
+  }
+}

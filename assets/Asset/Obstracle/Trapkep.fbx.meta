@@ -1,0 +1,126 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "714f03c2-ba62-4e05-a711-a8e6c575c722",
+  "files": [],
+  "subMetas": {
+    "3094a": {
+      "importer": "gltf-mesh",
+      "uuid": "714f03c2-ba62-4e05-a711-a8e6c575c722@3094a",
+      "displayName": "",
+      "id": "3094a",
+      "name": "Trap_Kep_L.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "795e2": {
+      "importer": "gltf-mesh",
+      "uuid": "714f03c2-ba62-4e05-a711-a8e6c575c722@795e2",
+      "displayName": "",
+      "id": "795e2",
+      "name": "Trap_Kep_R.mesh",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "74b66": {
+      "importer": "texture",
+      "uuid": "714f03c2-ba62-4e05-a711-a8e6c575c722@74b66",
+      "displayName": "",
+      "id": "74b66",
+      "name": "T_PokemonRunner_Props_Base_color_1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Asset/Obstracle/T_PokemonRunner_Props_Base_color.tga"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d7214": {
+      "importer": "gltf-material",
+      "uuid": "714f03c2-ba62-4e05-a711-a8e6c575c722@d7214",
+      "displayName": "",
+      "id": "d7214",
+      "name": "M_PokemonRunner_Props.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "090fb": {
+      "importer": "gltf-scene",
+      "uuid": "714f03c2-ba62-4e05-a711-a8e6c575c722@090fb",
+      "displayName": "",
+      "id": "090fb",
+      "name": "Trapkep.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "T_PokemonRunner_Props_Base_color_1",
+        "uri": "db://assets/Asset/Obstracle/T_PokemonRunner_Props_Base_color.tga"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "714f03c2-ba62-4e05-a711-a8e6c575c722@090fb",
+    "assetFinder": {
+      "meshes": [
+        "714f03c2-ba62-4e05-a711-a8e6c575c722@3094a",
+        "714f03c2-ba62-4e05-a711-a8e6c575c722@795e2"
+      ],
+      "skeletons": [],
+      "textures": [
+        "714f03c2-ba62-4e05-a711-a8e6c575c722@74b66"
+      ],
+      "materials": [
+        "714f03c2-ba62-4e05-a711-a8e6c575c722@d7214"
+      ],
+      "scenes": [
+        "714f03c2-ba62-4e05-a711-a8e6c575c722@090fb"
+      ]
+    }
+  }
+}

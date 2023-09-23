@@ -1,0 +1,78 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "82588647-4007-454b-9bd9-56a2e631f083",
+  "files": [],
+  "subMetas": {
+    "f42fd": {
+      "importer": "gltf-mesh",
+      "uuid": "82588647-4007-454b-9bd9-56a2e631f083@f42fd",
+      "displayName": "",
+      "id": "f42fd",
+      "name": "fill_road.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "62b33": {
+      "importer": "gltf-material",
+      "uuid": "82588647-4007-454b-9bd9-56a2e631f083@62b33",
+      "displayName": "",
+      "id": "62b33",
+      "name": "lambert6.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "3318b": {
+      "importer": "gltf-scene",
+      "uuid": "82588647-4007-454b-9bd9-56a2e631f083@3318b",
+      "displayName": "",
+      "id": "3318b",
+      "name": "fill_road.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "82588647-4007-454b-9bd9-56a2e631f083@3318b",
+    "assetFinder": {
+      "meshes": [
+        "82588647-4007-454b-9bd9-56a2e631f083@f42fd"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "82588647-4007-454b-9bd9-56a2e631f083@62b33"
+      ],
+      "scenes": [
+        "82588647-4007-454b-9bd9-56a2e631f083@3318b"
+      ]
+    }
+  }
+}
