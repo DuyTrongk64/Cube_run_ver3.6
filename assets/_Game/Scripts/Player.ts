@@ -94,7 +94,7 @@ export class Player extends Component {
 
     private onCollision(event: ICollisionEvent) {
 
-        let otherPlayer = event.otherCollider.getComponent(Player);
+        //console.log(event.otherCollider.getComponent(RigidBody).group);
         if (this.state == 1) {
             this.canMove = true;
             this.newPlayer = true;
@@ -105,34 +105,29 @@ export class Player extends Component {
             GameManager.Ins.coutPlayer++;
             GameManager.Ins.sumPlayer++;
             this.id = GameManager.Ins.sumPlayer;
-            //console.log(GameManager.Ins.coutPlayer);
             GameManager.Ins.playerList.push(this);
+            console.log(`${GameManager.Ins.playerList.length}`)
             //console.log(GameManager.Ins.coutPlayer);
-            console.log(`group: ${event.otherCollider.getComponent(RigidBody).group}`);
-
-
+            //console.log(`group: ${event.otherCollider.getComponent(RigidBody).group}`);
         }
         //console.log(event.otherCollider.getComponent(RigidBody).group);
-        if (event.otherCollider.getComponent(RigidBody).group == 4) {
+        if (event.otherCollider.getComponent(RigidBody).group == 8) {
             this.node.active = false;
             GameManager.Ins.coutPlayer--;
             GameManager.Ins.playerList.splice(this.id - 1, 1);
             //console.log(GameManager.Ins.coutPlayer);
         }
 
-
-
         if (event.otherCollider.name == 'End<BoxCollider>') {
             for (let i = 0; i < GameManager.Ins.coutPlayer; i++) {
-                //console.log(`${GameManager.Ins.playerList.length}`)
-                GameManager.Ins.playerList[i].moveTo(GameManager.Ins.player_field[i].getWorldPosition(), 1);
+                console.log(GameManager.Ins.player_field[i].getWorldPosition());
+                //GameManager.Ins.playerList[i].moveTo(GameManager.Ins.player_field[i].getWorldPosition(), 1);
+                GameManager.Ins.playerList[i].node.setPosition(GameManager.Ins.player_field[i].getWorldPosition());
                 GameManager.Ins.playerList[i].canMove = false;
                 GameManager.Ins.playerList[i].anim.play('idle');
                 GameManager.Ins.playerList[i].node.setRotation(new Quat(0, 0, 0, 0));
                 GameManager.Ins.playerList[i].endRun = true;
-
             }
-
             GameManager.Ins.endRun = true;
             this.waitAndExecute(()=>this.onEndRun());
         }
@@ -144,7 +139,6 @@ export class Player extends Component {
                 if (event.otherCollider.getComponent(Player).level == this.level) {
                     //console.log("test");
                     if (this.targetPlayer) {
-
                         GameManager.Ins.despawnPrefab(this.level - 1, this.node);
                         GameManager.Ins.despawnPrefab(this.level - 1, event.otherCollider.getComponent(Player).node);
                         GameManager.Ins.spawnPrefab(this.level, event.otherCollider.getComponent(Player).node.getPosition());
@@ -180,10 +174,10 @@ export class Player extends Component {
                     const item = raycastResults[i];
                     if (item.collider.node == this.node) {
                         this.targetPlayer = true;
-                        console.log(`id: ${this.id}`);
-                        console.log(`index: ${GameManager.Ins.playerList.indexOf(this)}`);
-                        console.log(`list length: ${GameManager.Ins.playerList.length}`);
-                        console.log("......................")
+                        // console.log(`id: ${this.id}`);
+                        // console.log(`index: ${GameManager.Ins.playerList.indexOf(this)}`);
+                        // console.log(`list length: ${GameManager.Ins.playerList.length}`);
+                        // console.log("......................")
                         break;
                     }
                 }
