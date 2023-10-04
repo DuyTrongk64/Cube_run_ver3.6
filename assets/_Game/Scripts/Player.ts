@@ -120,16 +120,16 @@ export class Player extends Component {
 
         if (event.otherCollider.name == 'End<BoxCollider>') {
             for (let i = 0; i < GameManager.Ins.coutPlayer; i++) {
-                console.log(GameManager.Ins.player_field[i].getWorldPosition());
-                //GameManager.Ins.playerList[i].moveTo(GameManager.Ins.player_field[i].getWorldPosition(), 1);
-                GameManager.Ins.playerList[i].node.setPosition(GameManager.Ins.player_field[i].getWorldPosition());
+                console.log(GameManager.Ins.playerList[i].node.name);
+                GameManager.Ins.playerList[i].moveTo(GameManager.Ins.player_field[i].getWorldPosition(), 1);
+                //GameManager.Ins.playerList[i].node.name;
                 GameManager.Ins.playerList[i].canMove = false;
                 GameManager.Ins.playerList[i].anim.play('idle');
                 GameManager.Ins.playerList[i].node.setRotation(new Quat(0, 0, 0, 0));
                 GameManager.Ins.playerList[i].endRun = true;
             }
             GameManager.Ins.endRun = true;
-            this.waitAndExecute(()=>this.onEndRun());
+            //this.waitAndExecute(()=>this.onEndRun());
         }
 
         if (this.endRun) {
@@ -252,7 +252,7 @@ export class Player extends Component {
     }
 
     update(deltaTime: number) {
-        this.startRun(deltaTime);
+        this.startRun(deltaTime);   
         this.movePlayer(deltaTime);
         this.selectedBoss = GameManager.Ins.selectedBoss;
     }

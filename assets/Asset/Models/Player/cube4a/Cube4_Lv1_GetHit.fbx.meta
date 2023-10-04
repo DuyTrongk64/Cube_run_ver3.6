@@ -98,23 +98,6 @@
       ],
       "subMetas": {}
     },
-    "b896e": {
-      "importer": "gltf-embeded-image",
-      "uuid": "0ddd1a0c-28f6-4842-b888-0d28a1ba1faf@b896e",
-      "displayName": "",
-      "id": "b896e",
-      "name": "file6.image",
-      "userData": {
-        "gltfIndex": 1
-      },
-      "ver": "1.0.3",
-      "imported": true,
-      "files": [
-        ".json",
-        ".png"
-      ],
-      "subMetas": {}
-    },
     "91dcf": {
       "importer": "texture",
       "uuid": "0ddd1a0c-28f6-4842-b888-0d28a1ba1faf@91dcf",
@@ -151,8 +134,8 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "anisotropy": 0,
-        "isUuid": true,
-        "imageUuidOrDatabaseUri": "0ddd1a0c-28f6-4842-b888-0d28a1ba1faf@b896e"
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Asset/Models/Player/number text.png"
       },
       "ver": "1.0.22",
       "imported": true,
@@ -218,7 +201,7 @@
       },
       {
         "name": "file6",
-        "uri": "0ddd1a0c-28f6-4842-b888-0d28a1ba1faf@b896e"
+        "uri": "db://assets/Asset/Models/Player/number text.png"
       }
     ],
     "fbx": {
