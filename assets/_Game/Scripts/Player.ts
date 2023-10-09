@@ -99,7 +99,8 @@ export class Player extends Component {
             this.canMove = true;
             this.newPlayer = true;
             this.node.getPosition(this._curPos);
-            this.node.setRotation(new Quat(0, 1, 0, 0));
+            //this.node.setRotation(new Quat(0, 1, 0, 0));
+            this.rotateTo(0.1,(new Vec3(0,180,0)))
             this.state = 0;
             this.anim.play('run');
             GameManager.Ins.coutPlayer++;
@@ -118,18 +119,18 @@ export class Player extends Component {
             //console.log(GameManager.Ins.coutPlayer);
         }
 
-        if (event.otherCollider.name == 'End<BoxCollider>') {
+        if (event.otherCollider.name == 'End<BoxCollider>'&&!this.endRun) {
             for (let i = 0; i < GameManager.Ins.coutPlayer; i++) {
-                console.log(GameManager.Ins.playerList[i].node.name);
                 GameManager.Ins.playerList[i].moveTo(GameManager.Ins.player_field[i].getWorldPosition(), 1);
-                //GameManager.Ins.playerList[i].node.name;
+                //GameManager.Ins.playerList[i].node.setPosition(GameManager.Ins.player_field[i].getWorldPosition());
                 GameManager.Ins.playerList[i].canMove = false;
                 GameManager.Ins.playerList[i].anim.play('idle');
-                GameManager.Ins.playerList[i].node.setRotation(new Quat(0, 0, 0, 0));
+                //GameManager.Ins.playerList[i].node.setRotationFromEuler(new Vec3(0,0,0));
+                GameManager.Ins.playerList[i].rotateTo(0.5,(new Vec3(0,0,0)))
                 GameManager.Ins.playerList[i].endRun = true;
             }
             GameManager.Ins.endRun = true;
-            //this.waitAndExecute(()=>this.onEndRun());
+            this.waitAndExecute(()=>this.onEndRun());
         }
 
         if (this.endRun) {
@@ -223,7 +224,7 @@ export class Player extends Component {
             this.node.getPosition(this._curPos);
             this._targetPos.x = this._deltaPos.x * deltaTime;
             this._targetPos.z = -this._deltaPos.y * deltaTime;
-            //console.log(this._deltaPos.x);
+            //console.log(this._deltaPos.x);    
             Vec3.add(this._curPos, this._curPos, this._targetPos);
             this.node.setPosition(this._curPos);
         }
@@ -240,6 +241,15 @@ export class Player extends Component {
             .start();
     }
 
+    rotateTo(duration: number, targetRotation: Vec3) {
+        //const fromRotation = this.node.eulerAngles.clone(); // Lấy góc xoay hiện tại của node
+        const toRotation = targetRotation.clone(); // Góc xoay đích mà bạn muốn đạt được
+
+        // Sử dụng tween để thực hiện xoay
+        tween(this.node)
+            .to(duration, { eulerAngles: toRotation })
+            .start();
+    }
     // Hàm chờ
     waitAndExecute(callback: () => void) {
         setTimeout(() => {
