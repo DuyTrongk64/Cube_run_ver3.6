@@ -100,14 +100,15 @@ export class Player extends Component {
             this.newPlayer = true;
             this.node.getPosition(this._curPos);
             //this.node.setRotation(new Quat(0, 1, 0, 0));
-            this.rotateTo(0.1,(new Vec3(0,180,0)))
+            this.rotateTo(0.3, (new Vec3(0, 180, 0)));
             this.state = 0;
+            this.anim.stop();
             this.anim.play('run');
             GameManager.Ins.coutPlayer++;
             GameManager.Ins.sumPlayer++;
             this.id = GameManager.Ins.sumPlayer;
             GameManager.Ins.playerList.push(this);
-            console.log(`${GameManager.Ins.playerList.length}`)
+            //console.log(`${GameManager.Ins.playerList.length}`)
             //console.log(GameManager.Ins.coutPlayer);
             //console.log(`group: ${event.otherCollider.getComponent(RigidBody).group}`);
         }
@@ -119,18 +120,19 @@ export class Player extends Component {
             //console.log(GameManager.Ins.coutPlayer);
         }
 
-        if (event.otherCollider.name == 'End<BoxCollider>'&&!this.endRun) {
+        if (event.otherCollider.name == 'End<BoxCollider>' && !this.endRun) {
             for (let i = 0; i < GameManager.Ins.coutPlayer; i++) {
                 GameManager.Ins.playerList[i].moveTo(GameManager.Ins.player_field[i].getWorldPosition(), 1);
                 //GameManager.Ins.playerList[i].node.setPosition(GameManager.Ins.player_field[i].getWorldPosition());
                 GameManager.Ins.playerList[i].canMove = false;
                 GameManager.Ins.playerList[i].anim.play('idle');
                 //GameManager.Ins.playerList[i].node.setRotationFromEuler(new Vec3(0,0,0));
-                GameManager.Ins.playerList[i].rotateTo(0.5,(new Vec3(0,0,0)))
+                GameManager.Ins.playerList[i].rotateTo(0.5, (new Vec3(0, 0, 0)))
                 GameManager.Ins.playerList[i].endRun = true;
+                //console.log( GameManager.Ins.playerList[i].id);
             }
             GameManager.Ins.endRun = true;
-            this.waitAndExecute(()=>this.onEndRun());
+            this.waitAndExecute(() => this.onEndRun());
         }
 
         if (this.endRun) {
@@ -143,7 +145,14 @@ export class Player extends Component {
                         GameManager.Ins.despawnPrefab(this.level - 1, this.node);
                         GameManager.Ins.despawnPrefab(this.level - 1, event.otherCollider.getComponent(Player).node);
                         GameManager.Ins.spawnPrefab(this.level, event.otherCollider.getComponent(Player).node.getPosition());
-                        this.destroy();
+                        for(let i = 0; i < GameManager.Ins.playerList.length; i++)
+                        {
+                            if(GameManager.Ins.playerList[i].id==this.id||GameManager.Ins.playerList[i].id==event.otherCollider.getComponent(Player).id){
+                                GameManager.Ins.playerList[i].destroy();
+                                console.log("sdfsdfsdfsdfsdf");
+                            }
+                        }
+                        console.log(GameManager.Ins.playerList);
                     }
                 }
             }
@@ -216,15 +225,40 @@ export class Player extends Component {
             //console.log(this._deltaPos.x);
             Vec3.add(this._curPos, this._curPos, this._targetPos);
             this.node.setPosition(this._curPos);
+
+            // va chạm khung hình 
+            const minX = -10;
+            const maxX = 10;
+
+            let curPos = this.node.getPosition();
+            //console.log(curPos.x);
+            if (curPos.x < minX) { // ...
+                curPos.x = minX;
+                this.node.setPosition(curPos);
+
+            } else if (curPos.x > maxX) {
+                curPos.x = maxX;
+                this.node.setPosition(curPos);
+
+            }
+
         }
     }
 
     movePlayer(deltaTime: number) {
         if (this.targetPlayer && this.endRun) {
+            // this.node.getPosition(this._curPos);
+            // this._targetPos.x = this._deltaPos.x * deltaTime;
+            // this._targetPos.z = -this._deltaPos.y * deltaTime;
+            // //console.log(this._deltaPos.x);    
+            // Vec3.add(this._curPos, this._curPos, this._targetPos);
+            // this.node.setPosition(this._curPos);
             this.node.getPosition(this._curPos);
-            this._targetPos.x = this._deltaPos.x * deltaTime;
-            this._targetPos.z = -this._deltaPos.y * deltaTime;
-            //console.log(this._deltaPos.x);    
+            this._targetPos.x = this._deltaPos.x;
+            this._targetPos.z = -this._deltaPos.y;
+            // Đảm bảo rằng khoảng cách di chuyển không quá nhanh hoặc chậm bằng cách nhân với một hệ số
+            const moveSpeed = 0.1; // Tùy chỉnh tốc độ di chuyển tại đây
+            Vec3.multiplyScalar(this._targetPos, this._targetPos, moveSpeed);
             Vec3.add(this._curPos, this._curPos, this._targetPos);
             this.node.setPosition(this._curPos);
         }
@@ -247,22 +281,22 @@ export class Player extends Component {
 
         // Sử dụng tween để thực hiện xoay
         tween(this.node)
-            .to(duration, { eulerAngles: toRotation })
+            .to(duration, { eulerAngles: toRotation },{easing:"circIn"})
             .start();
     }
     // Hàm chờ
     waitAndExecute(callback: () => void) {
         setTimeout(() => {
             callback(); // Gọi hàm callback sau khi chờ
-        }, 1800);
+        }, 1600);
     }
 
-    onEndRun(){
+    onEndRun() {
         GameManager.Ins.camera2d.enabled = true;
     }
 
     update(deltaTime: number) {
-        this.startRun(deltaTime);   
+        this.startRun(deltaTime);
         this.movePlayer(deltaTime);
         this.selectedBoss = GameManager.Ins.selectedBoss;
     }
